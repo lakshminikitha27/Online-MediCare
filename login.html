@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Services - Login</title>
+    <link rel="icon" type="image/x-icon" href="D:\SIH\favicon2.png" width="100px" height="100px">
+    <style>
+        /* Your CSS rules can go here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* ... (existing CSS styles) ... */
+
+        .login-container {
+            width: 300px;
+            margin: 0 auto;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+        }
+
+        .login-container h2 {
+            text-align: center;
+        }
+
+        .login-form {
+            margin-top: 20px;
+        }
+
+        .login-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .login-form input[type="text"],
+        .login-form input[type="password"] {
+            width: 95%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .login-form button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body background="D:\SIH\bg login.png">
+    <header>
+        <h1>Welcome to Our Medical Services</h1>
+    </header>
+    </br>
+    </br>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form class="login-form" action="login.php" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <center><button type="submit" onclick="document.location='home.html'">LOGIN</button></br></br>
+            OR
+            <p>Don't have an account?<a href="create.html">Create one</a></p>
+            </center>
+        </form>
+    </div>
+</body>
+</html>
